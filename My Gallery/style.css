@@ -45,8 +45,6 @@ body {
     grid-template-rows: repeat(3, auto);
     width: 90%;
     margin: 0 auto;
-    padding-top: 64px;
-    padding-bottom: 64px;
     gap: 10px;
 }
 
