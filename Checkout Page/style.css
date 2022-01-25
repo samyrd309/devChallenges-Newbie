@@ -1,0 +1,342 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    min-width: 370px;
+    font-family: "Montserrat", sans-serif;
+    color: #4E5150;
+}
+
+img {
+    width: 120px;
+    height: 124px;
+    border-radius: 12px;
+    border: 1px solid #828282;
+}
+
+.label {
+    display: block;
+    width: 100%;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+input[type="number"] {
+    appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+::placeholder {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.header {
+    width: 100%;
+    height: 82px;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.subtitle {
+    margin-bottom: 14px;
+}
+
+.input-container {
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid #828282;
+    border-radius: 12px;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.input {
+    width: 100%;
+    border: none;
+    margin-left: 18px;
+}
+
+.shopping-container {
+    min-width: 360px;
+    width: 360px;
+    height: 535px;
+    margin: 0 auto;
+    padding: 1em;
+    background: #F2F2F2;
+    border-radius: 5%;
+}
+
+.container-form-info {
+    min-width: 355px;
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+
+/*--------------------------shopping--------------------------*/
+
+
+/*-----start produect secction------*/
+
+.product {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-left: .5em;
+    justify-content: flex-start;
+    margin-bottom: 28px;
+    gap: 10px;
+}
+
+.info-product {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/*
+.title-product,
+.text_special-price,
+.text-price {
+    margin-bottom: .6em;
+}
+*/
+
+.title-product {
+    font-size: 14px;
+    margin-bottom: ;
+    font-weight: 600;
+}
+
+.text-price,
+.text_special-price {
+    display: inline-block;
+    font-weight: 600;
+}
+
+.text-price {
+    margin-left: .2em;
+    font-size: 12px;
+    text-decoration: line-through;
+}
+
+.text_special-price {
+    font-size: 14px;
+    color: #F2994A;
+}
+
+
+/*start price counter*/
+
+.container_price-counter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #828282;
+    padding: 15px 20px;
+    border-radius: 12px;
+    width: 135px;
+    margin-bottom: 5px;
+}
+
+.btn-card {
+    border: none;
+    outline-width: 0;
+    border-radius: 4px;
+}
+
+.price-counter-value {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    outline-width: 0;
+    font-size: 16px;
+    color: #333333;
+}
+
+
+/*end price counter*/
+
+
+/*start shipping section and total price section */
+
+.shipping,
+.total {
+    border-top: 1px solid #333;
+    display: flex;
+    justify-content: space-between;
+    padding: .5em 1em;
+}
+
+.shipping>p,
+.total>p {
+    display: inline-block;
+    font-weight: 600;
+    color: #333;
+}
+
+.shipping {
+    margin-top: 7em;
+}
+
+.shipping-text,
+.total-text {
+    font-size: 14px;
+}
+
+
+/*end shipping section and total price section */
+
+
+/*End shopping section*/
+
+
+/*main*/
+
+
+/*Labels*/
+
+
+/*Country*/
+
+.country select {
+    color: #828282;
+}
+
+.country-option {
+    display: inline-block;
+    width: 100%;
+    border: none;
+    margin-left: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    background-color: transparent;
+}
+
+.country-option option {
+    color: #333;
+}
+
+
+/**/
+
+.shipping-add {
+    margin-top: 33px;
+}
+
+
+/**/
+
+.save-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+}
+
+.checkbox {
+    width: 16px;
+    height: 15px;
+    margin-right: 10px;
+    margin-top: 0;
+}
+
+
+/**/
+
+
+/*place info*/
+
+.place-info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    display: wrap;
+    gap: 10px;
+}
+
+.place-info>div {
+    width: 50%;
+}
+
+.button {
+    display: block;
+    width: 166px;
+    height: 54px;
+    float: right;
+    background-color: #F2994A;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.button:hover {
+    border: 1px solid #F2994A;
+    background-color: #fff;
+    color: #f2994a;
+}
+
+
+/*Country combobox*/
+
+@media (min-width: 992px) {
+    .container-products {
+        display: flex;
+        width: 70%;
+        order: 0;
+        gap: 60px;
+        margin: 0 auto;
+    }
+    .container-form-info {
+        width: 100%;
+        order: 1;
+    }
+    .title {
+        width: 70%;
+    }
+    .shopping-container {
+        width: 50%;
+        height: 535px;
+        order: 2;
+    }
+    .header {
+        height: 80px;
+    }
+    .subtitle {
+        font-size: 22px;
+    }
+    .shipping-text,
+    .total-text {
+        font-size: 18px;
+    }
+    .title-product {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout page Challenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,600;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="title">Checkout</h1>
+    </header>
+    <div class="container-products">
+        <aside class="shopping-container">
+            <article class="product">
+                <div class="img">
+                    <img src="/Assets/photo1.png" alt="">
+                </div>
+                <div class="info-product">
+                    <div class="prices">
+                        <h2 class="title-product">Vintage Backbag</h2>
+                        <p class="text_special-price">$54.99</p>
+                        <p class="text-price">$94.99</p>
+                    </div>
+                    <div class="container_price-counter">
+                        <button type="button" class="btn-card" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"> - </button>
+                        <input class="price-counter-value" type="number" id="quantity" value="0" min="0">
+                        <button type="button" class="btn-card" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"> + </button>
+                    </div>
+                </div>
+            </article>
+            <article class="product">
+                <div class="img">
+                    <img src="/Assets/photo1.png" alt="">
+                </div>
+                <div class="info-product">
+                    <div class="prices">
+                        <h2 class="title-product">Vintage Backbag</h2>
+                        <p class="text_special-price">$74.99</p>
+                        <p class="text-price">$124.99</p>
+                    </div>
+                    <div class="container_price-counter">
+                        <button type="button" class="btn-card" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"> - </button>
+                        <input class="price-counter-value" type="number" id="quantity" value="0" min="0">
+                        <button type="button" class="btn-card" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"> + </button>
+                    </div>
+                </div>
+
+            </article>
+            <div class="shipping">
+                <p class="shipping-text">Shipping</p>
+                <p>$19</p>
+            </div>
+            <div class="total">
+                <p class="total-text">Total</p>
+                <p>$148.98</p>
+            </div>
+
+        </aside>
+        <main class="container-form-info">
+            <form class="contact-info">
+                <h2 class="subtitle">Contact Information</h2>
+                <div class="E-mail">
+                    <label class="label" for="Email">Email</label>
+                    <div class="input-container">
+                        <i class="far fa-envelope input-icon"></i>
+                        <input class="input" type="text" placeholder="Enter tour email...">
+                    </div>
+                </div>
+                <div class="Phone">
+                    <label class="label" for="Phone">Phone</label>
+                    <div class="input-container">
+                        <i class="fas fa-phone input-icon"></i>
+                        <input class="input" type="tel" name="input_phone-number" id="input_phone-number" placeholder="Enter your phone...">
+                    </div>
+
+                </div>
+
+            </form>
+
+            <form class="shipping-add">
+                <h2 class="subtitle">Shipping address</h2>
+                <div class="fullname">
+                    <label class="label" for="Full name">Full name</label>
+                    <div class="input-container">
+                        <i class="fas fa-user-circle input-icon"></i>
+                        <input class="input" type="text" placeholder="Your full name...">
+                    </div>
+
+                </div>
+
+                <div class="address">
+                    <label class="label" for="Address">Address</label>
+                    <div class="input-container">
+                        <i class="fas fa-home input-icon"></i>
+                        <input class="input" type="text" placeholder="Your address...">
+                    </div>
+                </div>
+
+                <div class="city">
+                    <label class="label" for="City">City</label>
+                    <div class="input-container">
+                        <i class="fas fa-city input-icon"></i>
+                        <input class="input" type="text" placeholder="Your city...">
+                    </div>
+
+                </div>
+
+                <div class="place-info">
+                    <div class="country">
+                        <label class="label" for="Country">Country</label>
+                        <div class="input-container">
+                            <i class="fas fa-globe-europe input-icon"></i>
+                            <select class="country-option" name="" id="">
+                                <option disabled selected>Your country ...</option>
+                                <option value="option 1">Republica Dominicana</option>
+                                <option value="option 2">Ecuador</option>
+                                <option value="option 3">Costa Rica</option>
+                                <option value="option 4">Colombia</option>
+                            </select>
+                        </div>
+
+
+                    </div>
+
+                    <div class="postal-code">
+                        <label class="label" for="Postal code">Postal code</label>
+                        <div class="input-container">
+                            <i class="fas fa-mail-bulk input-icon"></i>
+                            <input class="input" type="text" placeholder="Your postal code...">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="save-info">
+                    <input class="checkbox" type="checkbox" name="Save this information for next time" id="">
+                    <p>Save this information for next time.</p>
+                </div>
+                <button class="button">Continue</button>
+            </form>
+
+        </main>
+
+    </div>
+</body>
+
+</html>
